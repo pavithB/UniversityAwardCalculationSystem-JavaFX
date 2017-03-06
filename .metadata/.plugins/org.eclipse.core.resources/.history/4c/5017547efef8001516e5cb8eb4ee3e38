@@ -1,0 +1,148 @@
+package application;
+
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+
+import javafx.scene.control.Label;
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
+
+public class viewcreditController {
+	@FXML
+	private Button viewFinalCredit;
+	@FXML
+	private Label credit;
+	@FXML
+	private Label ID;
+	@FXML
+	private Button home;
+
+	// coding the process of Button "home"
+	@FXML
+	public void backHome(ActionEvent event) throws IOException {
+		Stage primaryStage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("/application/Home.fxml"));
+		Scene scene = new Scene(root, 600, 500);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		primaryStage.setScene(scene);
+		primaryStage.show();
+		primaryStage
+				.setTitle("AWARD CALCULATION SYSTEM                  - U O G -                 No Where Particular");
+		primaryStage.setResizable(false);
+	}
+
+	// coding the process of Button "view_credit"
+	@FXML
+	public void viewFinal(ActionEvent event) {
+		// TODO Auto generated
+		ID.setText(DataBase.getStudentID());
+		int last = DataBase.getQualify();
+		System.out.print(last);
+		switch (last) {
+		case 1:
+			credit.setText("cert H.E");
+			break;
+		case 2:
+			credit.setText("dip  H.E");
+			break;
+		case 3:
+			credit.setText("non-honours");
+			break;
+		case 4:
+
+			int[] lev5 = { DataBase.getModule51(), DataBase.getModule52(), DataBase.getModule53(),
+					DataBase.getModule54(), DataBase.getModule55(), DataBase.getModule56() };
+			for (int i = 0; i < (lev5.length - 1); i++) {
+				for (int j = 0; j < ((lev5.length - 1) - i); j++) {
+					if (lev5[j] > lev5[j + 1]) {
+						int temp = lev5[j];
+						lev5[j] = lev5[j + 1];
+						lev5[j + 1] = temp;
+
+					}
+				}
+			}
+			for (int val : lev5) {
+				System.out.println(val);
+			}
+
+			int[] lev6 = { DataBase.getModule61(), DataBase.getModule62(), DataBase.getModule63(),
+					DataBase.getModule64(), DataBase.getModule65(), DataBase.getModule65() };
+			for (int n = 0; n < (lev6.length - 1); n++) {
+				for (int m = 0; m < ((lev6.length - 1) - n); m++) {
+					if (lev5[m] > lev5[m + 1]) {
+						int temp = lev5[m];
+						lev5[m] = lev5[m + 1];
+						lev5[m + 1] = temp;
+
+					}
+				}
+			}
+
+			if (lev5[0] >= lev6[0]) {
+				int lev5total1 = ((lev5[0] + lev5[1] + lev5[2] + lev5[3] + lev5[4] + lev5[5]) / 600) / 3;
+				
+				int lev6total1 = (((lev6[1] + lev6[2] + lev6[3] + lev6[4] + lev6[5]) / 500) / 3) * 2;
+
+				System.out.println(lev6total1);
+				System.out.println(lev5total1);
+				
+				
+				int final1 = lev5total1 + lev6total1;
+				if (final1 <= 100 && final1 >= 70) {
+					credit.setText("1st Class Honours");
+				} else if (final1 >= 60) {
+					credit.setText("2nd Class Honours Upper Division");
+				} else if (final1 >= 50) {
+					credit.setText("2nd Class Honours Upper Division");
+				} else if (final1 >= 40) {
+					credit.setText("3rd Class Honours");
+				} else if (final1 >= 0) {
+					credit.setText("Honours");
+				}
+
+			} else if (lev6[0] > lev5[0]) {
+				int lev5total2 = ((lev5[1] + lev5[2] + lev5[3] + lev5[4]) + lev5[5] / 500) / 3;
+				System.out.println(lev5total2);
+				int lev6total2 = (((lev6[0] + lev6[1] + lev6[2] + lev6[3] + lev6[4] + lev6[5]) / 600) / 3) * 2;
+				
+				System.out.println(lev6total2);
+				System.out.println(lev5total2);
+				
+				
+				int final2 = lev5total2 + lev6total2;
+				if (final2 <= 100 && final2 >= 70) {
+					credit.setText("1st Class Honours");
+				} else if (final2 >= 60) {
+					credit.setText("2nd Class Honours Upper Division");
+				} else if (final2 >= 50) {
+					credit.setText("2nd Class Honours Upper Division");
+				} else if (final2 >= 40) {
+					credit.setText("3rd Class Honours");
+				} else {
+					credit.setText("Honours");
+
+				}
+
+			}
+			break;
+		default:
+			Alert finalalert = new Alert(AlertType.INFORMATION);
+			finalalert.setTitle("E R R O R");
+			finalalert.setHeaderText("NOTHING TO DISPLAY ");
+			finalalert.setContentText("PLEASE ENTER MARKS");
+			finalalert.showAndWait();
+
+		}
+
+	}
+
+}

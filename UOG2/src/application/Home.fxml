@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+	<children>
+      <ImageView fitHeight="511.0" fitWidth="607.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/12910501_969018743180455_1792050066_n.jpg" />
+         </image>
+      </ImageView>
+		<Label fx:id="lbl2" layoutX="1.0" layoutY="6.0" prefHeight="79.0" prefWidth="600.0" text="             W E L C O M E" wrapText="true">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.6777777777777778" centerY="0.4904761904761905" focusDistance="-0.16279069767441867" radius="0.4534883720930233">
+               <stops>
+                  <Stop color="#e30f0b" />
+                  <Stop color="#e3aa0b" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Button fx:id="enterbtn" layoutX="408.0" layoutY="452.0" mnemonicParsing="false" onAction="#entermarks" prefHeight="38.0" prefWidth="123.0" text="Enter Mraks" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4833333333333334" centerY="0.4904761904761905" cycleMethod="REFLECT" focusDistance="-0.16279069767441867" radius="0.4534883720930233">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#8c1515" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="viewbtn" layoutX="53.0" layoutY="452.0" mnemonicParsing="false" onAction="#viewmarks" prefHeight="38.0" prefWidth="123.0" text="View Marks" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4833333333333334" centerY="0.4904761904761905" cycleMethod="REFLECT" focusDistance="-0.16279069767441867" radius="0.4534883720930233">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#8c1515" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+	</children>
+</AnchorPane>

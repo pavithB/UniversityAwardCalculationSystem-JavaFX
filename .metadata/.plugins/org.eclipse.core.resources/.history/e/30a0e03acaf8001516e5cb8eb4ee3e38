@@ -1,0 +1,129 @@
+package application;
+
+public class DataBase {
+
+	private static double module51;
+	private static double module52;
+	private static double module53;
+	private static double module54;
+	private static double module55;
+	private static double module56;
+
+	private static double module61;
+	private static double module62;
+	private static double module63;
+	private static double module64;
+	private static double module65;
+
+	private static String studentID;
+	
+	
+	private static int qualify; 
+
+	public static int getQualify() {
+		return qualify;
+	}
+
+	public static void setQualify(int qualify) {
+		DataBase.qualify = qualify;
+	}
+
+	public static double getModule61() {
+		return module61;
+	}
+
+	public static void setModule61(double module61) {
+		DataBase.module61 = module61;
+	}
+
+	public static double getModule62() {
+		return module62;
+	}
+
+	public static void setModule62(double module62) {
+		DataBase.module62 = module62;
+	}
+
+	public static double getModule63() {
+		return module63;
+	}
+
+	public static void setModule63(double module63) {
+		DataBase.module63 = module63;
+	}
+
+	public static double getModule64() {
+		return module64;
+	}
+
+	public static void setModule64(double module64) {
+		DataBase.module64 = module64;
+	}
+
+	public static double getModule65() {
+		return module65;
+	}
+
+	public static void setModule65(double module65) {
+		DataBase.module65 = module65;
+	}
+
+	public static double getModule51() {
+		return module51;
+	}
+
+	public static void setModule51(double number) {
+		DataBase.module51 = number;
+	}
+
+	public static double getModule52() {
+		return module52;
+	}
+
+	public static void setModule52(double module52) {
+		DataBase.module52 = module52;
+	}
+
+	public static double getModule53() {
+		return module53;
+	}
+
+	public static void setModule53(double module53) {
+		DataBase.module53 = module53;
+	}
+
+	public static double getModule54() {
+		return module54;
+	}
+
+	public static void setModule54(double module54) {
+		DataBase.module54 = module54;
+	}
+
+	public static double getModule55() {
+		return module55;
+	}
+
+	public static void setModule55(double module55) {
+		DataBase.module55 = module55;
+	}
+
+	public static double getModule56() {
+		return module56;
+	}
+
+	public static void setModule56(double module56) {
+		DataBase.module56 = module56;
+	}
+
+	public static String getStudentID() {
+		return studentID;
+	}
+
+	public static void setStudentID(String studentID) {
+		DataBase.studentID = studentID;
+	}
+
+
+	}
+

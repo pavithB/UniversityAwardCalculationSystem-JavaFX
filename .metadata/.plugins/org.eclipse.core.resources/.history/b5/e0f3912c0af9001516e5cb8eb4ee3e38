@@ -1,0 +1,180 @@
+/*
+ int credit =0;
+ */
+ public void Level4(ActionEvent event)throws Exception{//Go to the level5 from level4
+    
+    int x=0;//setting a count to get fail modules(give condoned marks)
+    
+    if(txtICT1_1_4.getText().equals("")||txtICT2_1_4.getText().equals("")||txtICT3_1_4.getText().equals("")|| 
+      txtICT1_2_4.getText().equals("")||txtICT2_2_4.getText().equals("")||txtICT3_2_4.getText().equals("")||
+      txtICT1_3_4.getText().equals("")||txtICT2_3_4.getText().equals("")||txtICT3_3_4.getText().equals("")||
+      txtICT1_4_4.getText().equals("")||txtICT2_4_4.getText().equals("")||txtICT2_4_4.getText().equals("")||
+      txtICT1_5_4.getText().equals("")||txtICT2_5_4.getText().equals("")||txtICT3_5_4.getText().equals("")||
+      txtICT1_6_4.getText().equals("")||txtICT2_6_4.getText().equals("")||txtICT3_6_4.getText().equals("")){ //if nothing input for Level4 get a Alert box
+     Alert txtStudentName=new Alert(AlertType.ERROR,"please input user details",ButtonType.OK);
+     txtStudentName.showAndWait();
+    }else{
+     int ICT1_1_4=Integer.parseInt(txtICT1_1_4.getText());//convert string into integer
+     int ICT2_1_4=Integer.parseInt(txtICT2_1_4.getText());
+     int ICT3_1_4=Integer.parseInt(txtICT3_1_4.getText());
+     int ICT1_2_4=Integer.parseInt(txtICT1_2_4.getText());
+     int ICT2_2_4=Integer.parseInt(txtICT2_2_4.getText());
+     int ICT3_2_4=Integer.parseInt(txtICT3_2_4.getText());
+     int ICT1_3_4=Integer.parseInt(txtICT1_3_4.getText());
+     int ICT2_3_4=Integer.parseInt(txtICT2_3_4.getText());
+     int ICT3_3_4=Integer.parseInt(txtICT3_3_4.getText());
+     int ICT1_4_4=Integer.parseInt(txtICT1_4_4.getText());
+     int ICT2_4_4=Integer.parseInt(txtICT2_4_4.getText());
+     int ICT3_4_4=Integer.parseInt(txtICT3_4_4.getText());
+     int ICT1_5_4=Integer.parseInt(txtICT1_5_4.getText());
+     int ICT2_5_4=Integer.parseInt(txtICT2_5_4.getText());
+     int ICT3_5_4=Integer.parseInt(txtICT3_5_4.getText());
+     int ICT1_6_4=Integer.parseInt(txtICT1_6_4.getText());
+     int ICT2_6_4=Integer.parseInt(txtICT2_6_4.getText());
+     int ICT3_6_4=Integer.parseInt(txtICT3_6_4.getText());
+     
+     double Avg1_4=(ICT1_1_4+ICT2_1_4+ICT3_1_4)/3.0;//check avg mod1
+     
+      if(Avg1_4 >= 40){
+       lbl1level4.setText("Pass");
+      }
+      else{
+       lbl1level4.setText("Fail");x++;
+      }
+      
+     double Avg2_4=(ICT1_2_4+ICT2_2_4+ICT3_2_4)/3.0;//check avg mod2
+     
+      if(Avg2_4 >= 40){
+       lbl2level4.setText("Pass");
+      
+      }else{
+       lbl2level4.setText("Fail");x++;
+      }
+      
+     double Avg3_4=(ICT1_3_4+ICT2_3_4+ICT3_3_4)/3.0;//check avg mod3 
+     
+      if(Avg3_4 >= 40){
+       lbl3level4.setText("Pass");
+      
+      }else{
+       lbl3level4.setText("Fail");x++;
+      }
+      
+     double Avg4_4=(ICT1_4_4+ICT2_4_4+ICT3_4_4)/3.0;//check avg mod4 
+      
+      if(Avg4_4 >= 40){
+       lbl4level4.setText("Pass");
+      
+      }else{
+       lbl4level4.setText("Fail");x++;
+      }
+      
+     double Avg5_4=(ICT1_5_4+ICT2_5_4+ICT3_5_4)/3.0;//check avg mod5 
+      
+      if(Avg5_4 >= 40){
+       lbl5level4.setText("Pass");
+      
+      }else{
+       lbl5level4.setText("Fail");x++;
+      } 
+      
+     double Avg6_4=(ICT1_6_4+ICT2_6_4+ICT3_6_4)/3.0;//check avg mod6 
+      
+      if(Avg6_4>= 40){
+       lbl6level4.setText("Pass");
+      
+      }else{
+       lbl6level4.setText("Fail");x++;
+      } 
+      
+      
+    /*  
+   double[] lev4 = { Avg1_4, Avg2_4, Avg3_4, Avg4_4, Avg5_4, Avg6_4 };
+   int size = 0;
+   for (double cal : lev4) {
+    if(cal >= 40){       //MAMA MODULE EKK PASS NAM CREDIT 20 K DENA SEEN EKEN YANNE
+     credit = credit + 20 ;
+    }else if(cal >= 30){
+     ArrayList<Double> con = new ArrayList<Double>();
+     con.add(cal);
+        size = con.size();   
+    }
+   }
+  
+
+   if (size == 1) {
+    credit = credit + 20 ;
+   }else if(size == 2){
+    credit = credit + 40;
+   }else if(size > 2){
+    ((Node)event.getSource()).getScene().getWindow().hide();//hide the the window 
+        Stage primaryStage=new Stage();
+        Parent root=FXMLLoader.load(getClass().getResource("/application/Refferal.fxml"));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.show();
+   }
+   
+      
+      
+      */
+      
+      
+     if(lbl1level4.getText().equals("Fail")||lbl2level4.getText().equals("Fail")||lbl3level4.getText().equals("Fail")||//validate result
+       lbl4level4.getText().equals("Fail")||lbl5level4.getText().equals("Fail")||lbl6level4.getText().equals("Fail")){
+      
+      switch(x){
+      case 1:{//ask condone marks
+       ((Node)event.getSource()).getScene().getWindow().hide();//hide the the window 
+       Stage primaryStage=new Stage();
+       Parent root=FXMLLoader.load(getClass().getResource("/application/Condone.fxml"));
+       Scene scene = new Scene(root);
+       scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+       primaryStage.setScene(scene);
+       primaryStage.show();
+       
+      };break;
+      case 2:{//ask condone marks
+       ((Node)event.getSource()).getScene().getWindow().hide();//hide the the window 
+       Stage primaryStage=new Stage();
+       Parent root=FXMLLoader.load(getClass().getResource("/application/Condone.fxml"));
+       Scene scene = new Scene(root);
+       scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+       primaryStage.setScene(scene);
+       primaryStage.show();
+      };break;
+      case 3:{//more than two modules fail go to referral
+       ((Node)event.getSource()).getScene().getWindow().hide();//hide the the window 
+       Stage primaryStage=new Stage();
+       Parent root=FXMLLoader.load(getClass().getResource("/application/Refferal.fxml"));
+       Scene scene = new Scene(root);
+       scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+       primaryStage.setScene(scene);
+       primaryStage.show();
+      };break;
+      default:{//more than four modules fail
+       ((Node)event.getSource()).getScene().getWindow().hide();//hide the the window 
+       Stage primaryStage=new Stage();
+       Parent root=FXMLLoader.load(getClass().getResource("/application/GoHome.fxml"));
+       Scene scene = new Scene(root);
+       scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+       primaryStage.setScene(scene);
+       primaryStage.show();
+      };break;
+      
+      }
+     }else{
+      ((Node)event.getSource()).getScene().getWindow().hide();//hide the the window 
+      Stage primaryStage=new Stage();
+      Parent root=FXMLLoader.load(getClass().getResource("/application/Level5.fxml"));
+      Scene scene = new Scene(root);
+      scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+      primaryStage.setScene(scene);
+      primaryStage.show();
+     }
+    }
+   }
+ 
+ 
+}

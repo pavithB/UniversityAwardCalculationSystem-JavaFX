@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.level4Controller">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="604.0" layoutX="23.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/12910674_969018746513788_130659454_n.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="65.0" prefHeight="65.0" prefWidth="185.0" text="LEVEL_04" textFill="#dd4a4a">
+         <font>
+            <Font name="Arabic Typesetting" size="44.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stuid" layoutX="446.0" layoutY="21.0" prefHeight="25.0" prefWidth="140.0" promptText="Student_ID*" />
+      <TextField fx:id="stuname" layoutX="16.0" layoutY="21.0" prefHeight="25.0" prefWidth="140.0" promptText="Student_Name*" />
+      <Label layoutX="23.0" layoutY="127.0" prefHeight="33.0" prefWidth="76.0" text="ECSI410" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="127.0" prefHeight="33.0" prefWidth="76.0" text="ECSI412" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="127.0" prefHeight="33.0" prefWidth="76.0" text="ECSI404" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="127.0" prefHeight="33.0" prefWidth="76.0" text="ECSI400" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="127.0" prefHeight="33.0" prefWidth="76.0" text="ECSI415" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="127.0" prefHeight="33.0" prefWidth="76.0" text="ECSI450" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="l4m11" layoutX="36.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_01" />
+      <TextField fx:id="l4m12" layoutX="36.0" layoutY="229.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_02" />
+      <TextField fx:id="l4m13" layoutX="36.0" layoutY="279.0" prefHeight="25.0" prefWidth="50.0" promptText="C_W" />
+      <TextField fx:id="l4m21" layoutX="129.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_01" />
+      <TextField fx:id="l4m22" layoutX="129.0" layoutY="229.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_02" />
+      <TextField fx:id="l4m23" layoutX="129.0" layoutY="279.0" prefHeight="25.0" prefWidth="50.0" promptText="C_W" />
+      <TextField fx:id="l4m31" layoutX="221.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_01" />
+      <TextField fx:id="l4m32" layoutX="221.0" layoutY="229.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_02" />
+      <TextField fx:id="l4m41" layoutX="313.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_01" />
+      <TextField fx:id="l4m42" layoutX="313.0" layoutY="229.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_02" />
+      <TextField fx:id="l4m51" layoutX="400.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_01" />
+      <TextField fx:id="l4m52" layoutX="400.0" layoutY="229.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_02" />
+      <TextField fx:id="l4m61" layoutX="488.0" layoutY="179.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_01" />
+      <TextField fx:id="l4m62" layoutX="488.0" layoutY="229.0" prefHeight="25.0" prefWidth="50.0" promptText="ICT_02" />
+      <Button fx:id="level5" layoutX="521.0" layoutY="439.0" mnemonicParsing="false" onAction="#cont4" text="Level_05" />
+      <Button fx:id="leave4" layoutX="23.0" layoutY="439.0" mnemonicParsing="false" onAction="#leave4" text="Leave" />
+      <Separator layoutY="52.0" prefHeight="25.0" prefWidth="600.0" />
+      <Button fx:id="checkbtn4" layoutX="278.0" layoutY="439.0" mnemonicParsing="false" onAction="#checkmarks4" text="check" />
+      <Label fx:id="checklbl4" layoutX="5.0" layoutY="377.0" prefHeight="41.0" prefWidth="593.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Separator layoutX="-2.0" layoutY="411.0" prefHeight="14.0" prefWidth="600.0" />
+      <Label fx:id="lvl4atemp" layoutX="302.0" layoutY="67.0" prefHeight="62.0" prefWidth="234.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font></Label>
+      <Label fx:id="ECSI410result" layoutX="1.0" layoutY="332.0" prefHeight="27.0" prefWidth="103.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ECSI412result" layoutX="105.0" layoutY="332.0" prefHeight="27.0" prefWidth="96.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ECSI404result" layoutX="197.0" layoutY="332.0" prefHeight="27.0" prefWidth="96.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ECSI400result" layoutX="296.0" layoutY="332.0" prefHeight="27.0" prefWidth="103.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ECSI415result" layoutX="394.0" layoutY="332.0" prefHeight="27.0" prefWidth="103.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ECSI450result" layoutX="486.0" layoutY="332.0" prefHeight="27.0" prefWidth="117.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
