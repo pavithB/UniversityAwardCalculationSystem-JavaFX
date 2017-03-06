@@ -21,5 +21,5 @@ with <b>dip.H.E</b> .
 
 <h4 align="center">Here is a screenshot of the mark entering window of the application</h4>
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/23357240/23600970/316f6e28-026f-11e7-865c-13b01f2df0fa.PNG" width="350"/>
+  <img src="https://cloud.githubusercontent.com/assets/23357240/23601737/f7850796-0272-11e7-95e4-f3251d388214.PNG" width="350"/>
 </p>
