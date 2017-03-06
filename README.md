@@ -16,3 +16,10 @@ with <b>dip.H.E</b> .
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/23357240/23600970/316f6e28-026f-11e7-865c-13b01f2df0fa.PNG" width="350"/>
 </p>
+<br/>
+<br/>
+
+<h4 align="center">Here is a screenshot of the mark entering window of the application</h4>
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/23357240/23600970/316f6e28-026f-11e7-865c-13b01f2df0fa.PNG" width="350"/>
+</p>
